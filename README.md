@@ -6,7 +6,7 @@ Clone this repository and open the project in Xcode.  Once you have done that, f
 
 ## Edit the Bundle Identifier
 
-You may have issues signing the the project or problems with the provisioning profile.  The easiest thing to do is to edit your Bundle Identifier on the project information page under Settings (click on the root of your project in the left project explorer - the blue icon at the top).  Just add a dot and your computing ID to the end, so it looks like `edu.virginia.cs.cs4720.Note-Taker.compid` and it should work.
+You may have issues signing the the project or problems with the provisioning profile.  The easiest thing to do is to edit your Bundle Identifier on the project information page under Settings (click on the root of your project in the left project explorer - the blue icon at the top).  Just add a dot and your computing ID to the end, so it looks like `edu.yourschool.Stopwatch.compid` and it should work.
 
 ## Steps to Follow
 
