@@ -49,9 +49,10 @@ CHECK: At this point, you should be able to run the app, and clicking the '+' bu
 Finally, it's up to you to build out the 'AddTimeViewController' to exhibit the following functionality:
 
 1. It should have a label in the middle that it prepopulated with the current value of the elapsedTimeLabel in the 'HomeViewController' when the 'AddTimeViewController is launched' (note: this label's value will be static, it won't update like the elapsedTimeLabel)
-2. It should have a 'cancel' bar button item in top left that dismisses the 'AddTimeViewController'.
-3. It should have a 'save' button somewhere, which, when pressed, presents an alert saying that you just 'fake' saved the time. In the alert message, you should mention the value in the label.
-4. To pass the time from the 'HomeViewController' to the 'AddTimeViewController', you will need to edit the code found in the 'prepare()' function in 'HomeViewController'.  Here, uncomment the line that creates the 'targetController'.  In the 'AddTimeViewController', add a field called 'elapsedTime' as a 'String' with an initial blank value.  Back in the 'prepare()' function, add a line of code that will set the 'elapsedTime' value in the 'targetController' with the value of the time label in the 'HomeViewController'.  In 'onViewDidLoad()' in the 'AddTimeViewController', you can now set the label text based on the value of 'elapsedTime'.
+2. It should already have a '< Back' bar button item in top left that dismisses the 'AddTimeViewController'.
+3. It should have a 'Save' button somewhere on the screen, which, when pressed, presents an alert saying that you just 'fake' saved the time. In the alert message, you should mention the value in the label.  See the code at the bottom of this README.
+4. To pass the time from the 'HomeViewController' to the 'AddTimeViewController', you will need to edit the code found in the 'prepare()' function in 'HomeViewController'.  First, click on the segue in the interface builder (the arrow thing between the 'HomeViewController' and the 'AddTimeViewController'.  In the Attributes Inspector, give it the Identifier 'AddTime'.
+5. In 'HomeViewController', find the 'prepare()' method.  Look at the example provided in the 'LectureTest' example code for how to write this method.  You will also need to add code to the 'viewDidLoad()' method in 'AddTimeViewController' based on the 'NewMessageViewController' from the 'LectureTest' example as well.  The code you write in 'prepare()' will "pre-set" the values in the destination ViewController before it launches.  Then, in the 'AddTimeViewController', you can grab the data and set the label's value.
 
 ## Submit
 
