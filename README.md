@@ -74,11 +74,6 @@ print(stopwatch.elapsedTime)
 stopwatch.stop()
 ```
 
-__Code to dismiss the AddTimeViewController screen when you press cancel:__
-```swift
-dismiss(animated: true, completion: nil)
-```
-
 __Code to show a popup when you "save" the time on the AddTimeViewController:__
 ```swift
 let alertController = UIAlertController(title: "Time Saved!", message: "You just fake saved the time " + timeLabel.text! + "!", preferredStyle: .alert)
